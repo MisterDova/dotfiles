@@ -17,7 +17,6 @@ unset __conda_setup
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-#source $(brew --prefix)/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 . "/Users/maxchan/.deno/env"
@@ -27,8 +26,6 @@ alias ls="eza -l -h --no-permissions --no-filesize --no-user --icons -s=Name"
 #echo "$(sudo yabai --load-sa)"
 autoload -Uz compinit
 compinit
-#bindkey -M menuselect              '^I'         menu-complete
-#bindkey -M menuselect "$terminfo[kcbt]" reverse-menu-complete
 
 #echo "
 #⣿⣿⣿⣿⣿⡿⠛⠋⠁⠀⠀⠀⠀⠙⠛⠿⠟⠋⠉⠁⠀⠈⠙⠻
