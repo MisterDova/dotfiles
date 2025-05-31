@@ -5,4 +5,6 @@
     - [x] bashrc / zshrc
     - [ ] tmux config
     - [ ] sketchybar config
-    - [ ] yabai config
+    - [ ] yabai + skhd config
+    - [ ] script to install dependencies
+    - [ ] Starship config
