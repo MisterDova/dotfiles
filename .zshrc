@@ -45,3 +45,6 @@ compinit
     #- Steve Harvey
 #"
 alias jukit_kitty="kitty --listen-on=unix:@"$(date +%s%N)" -o allow_remote_control=yes"
+
+export EDITOR="nvim"
+export VISUAL="nvim"
