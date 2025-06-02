@@ -19,7 +19,7 @@
 ## How to use the repo
 - first, clone this repo to your machine in a folder ~/.dotfiles/ in your root directory (if you're in unix)
 ```bash
-git clone https://github.com/MisterDova/dotfiles.git ~/.dotfiles/
+git clone https://github.com/MisterDova/dotfiles.git ~/.dotfiles
 ```
 - use the command below to make it work by creating a symbolic link between the repo folder and .config folder, this would apply most of the configs in the repo (except zshrc & bashrc)
 ```bash
