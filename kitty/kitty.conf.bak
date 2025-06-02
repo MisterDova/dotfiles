@@ -1,0 +1,33 @@
+# font_family monospace
+font_size 17
+
+
+# BEGIN_KITTY_FONTS
+font_family      family='JetBrainsMono Nerd Font Mono' style=Light
+bold_font        family='JetBrainsMono Nerd Font Mono' postscript_name=JetBrainsMonoNFM-ExtraBold
+italic_font      family='JetBrainsMono Nerd Font Mono' style='Light Italic'
+bold_italic_font family='JetBrainsMono Nerd Font Mono' postscript_name=JetBrainsMonoNFM-ExtraBoldItalic
+# END_KITTY_FONTS
+
+# Background colors
+background_opacity 0.8
+background_blur 30
+background_color #1a1a1a
+#background_image /Users/maxchan/Desktop/WoW/113761327_p0.jpg
+background_image_layout cscaled
+background_tint 0.99
+dim_opacity 0.5
+#background_tint_gaps 1
+window_margin_width 2
+# active_border_color #00ff00
+# inactive_border_color #ff0000
+
+tab_bar_style powerline
+
+# taskbar 
+hide_window_decorations titlebar-only
+
+# BEGIN_KITTY_THEME
+# zenwritten_dark
+include current-theme.conf
+# END_KITTY_THEME

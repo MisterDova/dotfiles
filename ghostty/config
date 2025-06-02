@@ -1,0 +1,21 @@
+font-family = "JetBrainsMono Medium"
+font-family-bold = "JetBrainsMono NFM ExtraBold"
+font-family-italic = "JetBrainsMono NFM Light Italic"
+font-family-bold-italic = "JetBrainsMono NFM ExtraBold Italic"
+font-synthetic-style = true
+font-size = 17
+
+cursor-style = block
+shell-integration-features = no-cursor
+mouse-hide-while-typing = true
+background-opacity = 0.85
+background-blur = true
+theme = duskfox
+#theme = afterglow
+#theme = catppuccin-macchiato
+background = #131313
+macos-titlebar-style = hidden
+window-save-state = always 
+window-colorspace = display-p3
+macos-window-shadow = false
+auto-update = check

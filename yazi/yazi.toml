@@ -1,0 +1,11 @@
+[opener]
+edit = [{ run = 'nvim "$@"', block = true }]
+
+[manager]
+sort_by = "natural"
+sort_dir_first = true
+
+[plugin]
+prepend_previewers = [
+  { name = "*.md", run = "glow" },
+]

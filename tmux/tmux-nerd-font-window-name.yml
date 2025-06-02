@@ -1,0 +1,5 @@
+config:
+  show-name: false
+icons:
+  zsh: "" # overwrite with your own symbol (Nerd Font icon, emoji, whatever!)
+  nvim: ""
