@@ -2,3 +2,4 @@ zsh-autocomplete/
 raycast/
 btop/*.log
 karabiner/automatic_backups/
+nvim/lazy-lock.json
