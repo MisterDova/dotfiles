@@ -29,4 +29,5 @@ ln -s ~/.dotfiles/ ~/.config
 ```bash
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 source ~/.zshrc
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
