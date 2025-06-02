@@ -23,7 +23,7 @@ git clone https://github.com/MisterDova/dotfiles.git ~/.dotfiles
 ```
 - use the command below to make it work by creating a symbolic link between the repo folder and .config folder, this would apply most of the configs in the repo (except zshrc & bashrc)
 ```bash
-ln -s ~/.dotfiles/ ~/.config
+ln -s ~/.dotfiles ~/.config
 ```
 - to use the zshrc config, use the following command (don't forget to source it after applying to changes)
 ```bash
