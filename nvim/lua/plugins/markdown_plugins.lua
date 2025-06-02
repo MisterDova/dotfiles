@@ -1,19 +1,22 @@
 return {
-	"MeanderingProgrammer/render-markdown.nvim",
-	dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" },
-	---@module 'render-markdown'
-	---@type render.md.UserConfig
-	opts = {
-		completions = {
-			blink = { enabled = true },
-			lsp = { enabled = true },
+	{
+		"MeanderingProgrammer/render-markdown.nvim",
+		dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" },
+		---@module 'render-markdown'
+		---@type render.md.UserConfig
+		opts = {
+			completions = {
+				blink = { enabled = true },
+				lsp = { enabled = true },
+			},
+			heading = { position = "inline" },
+			code = { sign = false },
+			render_modes = true,
 		},
-		render_modes = true,
-		heading = { position = "inline" },
-		code = { sign = false },
 	},
 	{
 		-- plugin to open markdown links
+		-- press enter to open, press backspace to go back
 		"jghauser/follow-md-links.nvim",
 		vim.keymap.set("n", "<bs>", ":edit #<cr>", { silent = true }),
 	},
