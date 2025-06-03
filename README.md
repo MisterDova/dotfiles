@@ -7,15 +7,17 @@
     - [x] sketchybar config
     - [x] yabai + skhd config
     - [x] Starship config
+    - [x] yazi config
     - [ ] script to install dependencies
 ## Things that I use
 - neovim, as the main editor
 - zsh, as the shell
-- tmux
-- sketchybar
-- yabai WM 
+- tmux, as workspaces management
+- sketchybar, as replacement of original status bar (especially in mac)
+- yabai, as window manager
 - skhd for hotkeys used w/ yabai
 - startship to make prompt line looks better
+- yazi, as file management
 ## How to use the repo
 - first, clone this repo to your machine in a folder ~/.dotfiles/ in your root directory (if you're in unix)
 ```bash
@@ -30,9 +32,17 @@ ln -s ~/.dotfiles ~/.config
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 source ~/.zshrc
 ```
-- for **tmux**, I don't know why it can't read from the config folder. Therefore a command is needed to make it work
-- if the status bar doesn't display properly, press **ctrl + i** for install the plugin
-- this config also binds **ctrl + h/j/k/l** for navigating between windows, and **ctrl + r** for reloading the config
+- for **tmux**, I don't know why it can't read from the config folder. Therefore a command is needed to make it work (This would be updated if I find a way to fix this issue)
+- **Prefix used in this conifg: ctrl + b** 
+- if the status bar doesn't display properly, press **prefix + i** for install the plugin
+- this config also binds **prefix + h/j/k/l** for navigating between windows, and **prefix + r** for reloading the config
 ```bash
 ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
+```
+## for yabai
+- in-order to use full potential of yabai, you need to disable some SIP options, which is mentioned in [yabai's wiki page](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)
+- In my machine, I just disabled all SIP to keeps things simple, and everything works just fine at this moment
+- (still finding a way to automate this) Each time you rebot the machine, enter this command to enable all yabai's functions
+```bash
+sudo yabai --load-sa
 ```
