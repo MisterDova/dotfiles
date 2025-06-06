@@ -25,6 +25,7 @@ alias l="eza -X --icons"
 alias ls="eza -l -h --no-permissions --no-filesize --no-user --icons -s=Name"
 alias lg="lazygit"
 alias nv="nvim"
+alias y="yazi"
 #echo "$(sudo yabai --load-sa)"
 autoload -Uz compinit
 compinit
