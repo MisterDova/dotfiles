@@ -1,3 +1,3 @@
-#!/bin/bash
-eval "$(sudo yabai --load-sa)"
-eval "$(yabai --restart-service)"
+#!/bin/zsh
+sudo yabai --load-sa
+yabai --restart-service

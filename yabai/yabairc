@@ -1,11 +1,13 @@
-yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+yabai -m signal --add event=boot_sa action="sudo yabai --load-sa"
 
-#yabai -m signal --add event=space_changed action="~/.config/yabai/transparency.sh"
-#yabai -m signal --add event=window_focused action="~/.config/yabai/transparency.sh"
-#yabai -m signal --add event=layout_changed action="~/.config/yabai/transparency.sh"
-#yabai -m signal --add event=window_zoom_fullscreen action="~/.config/yabai/transparency.sh"
-#yabai -m signal --add event=window_created action="~/.config/yabai/transparency.sh"
-#yabai -m signal --add event=window_destroyed action="~/.config/yabai/transparency.sh"
+yabai -m space --create
+yabai -m space --create
+yabai -m space --create
+yabai -m config --space 3 layout stack
+
+yabai -m space --label 1 terminal
+yabai -m space --label 2 browser
+yabai -m space --label 3 chat
 
 yabai -m config layout bsp
 yabai -m config window_placement second_child
@@ -27,13 +29,19 @@ yabai -m config window_shadow float
 
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^Discord$" manage=off
 yabai -m rule --add app="^Calculators$" manage=off
 yabai -m rule --add app="^karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
-yabai -m rule --add app="^Microsoft PowerPoint$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
 yabai -m rule --add app="^Surfshark$" manage=off
+
+yabai -m rule --add app="^Ghostty$" space=1
+yabai -m rule --add app="^Zen$" space=2
+yabai -m rule --add app="^Discord$" space=3
+yabai -m rule --add app="^WhatsApp$" space=3
+yabai -m rule --add app="^Telegram$" space=3
+
+yabai -m rule --apply
 
 borders active_color=0xffd6b4fc width=5
 # inactive_color=0xff494d64
