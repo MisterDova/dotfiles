@@ -1,13 +1,15 @@
 return {
 	{
 		"saghen/blink.cmp",
-		dependencies = { "rafamadriz/friendly-snippets" },
+		dependencies = { "rafamadriz/friendly-snippets", "echasnovski/mini.nvim" },
 
 		version = "1.*",
 		---@module 'blink.cmp'
 		---@type blink.cmp.Config
 
 		opts = {
+			-- cmdline = { enabled = false },
+
 			keymap = {
 				preset = "default",
 				["<CR>"] = { "accept", "fallback" },
@@ -31,6 +33,25 @@ return {
 				menu = {
 					draw = {
 						columns = { { "kind_icon", "label", gap = 1 }, { "kind", gap = 1 } },
+						-- treesitter = { "lsp" },
+						components = {
+							kind_icon = {
+								text = function(ctx)
+									local kind_icon, _, _ = require("mini.icons").get("lsp", ctx.kind)
+									return kind_icon
+								end,
+								highlight = function(ctx)
+									local _, hl, _ = require("mini.icons").get("lsp", ctx.kind)
+									return hl
+								end,
+							},
+							kind = {
+								highlight = function(ctx)
+									local _, hl, _ = require("mini.icons").get("lsp", ctx.kind)
+									return hl
+								end,
+							},
+						},
 					},
 				},
 			},

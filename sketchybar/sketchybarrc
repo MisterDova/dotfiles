@@ -37,14 +37,14 @@ sketchybar --default "${default[@]}"
 
 #left items
 source "$ITEM_DIR/spaces.sh" 
-source "$ITEM_DIR/network.sh"
 source "$ITEM_DIR/current_window.sh"
 
 #right items
 source "$ITEM_DIR/time.sh"
+source "$ITEM_DIR/battery.sh"
 source "$ITEM_DIR/volume.sh"
 source "$ITEM_DIR/dnd.sh"
-source "$ITEM_DIR/battery.sh"
+source "$ITEM_DIR/network.sh"
 source "$ITEM_DIR/usage.sh"
 #source "$ITEM_DIR/lang.sh"
 

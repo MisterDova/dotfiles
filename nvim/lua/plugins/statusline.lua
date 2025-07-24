@@ -11,6 +11,7 @@ return {
 			ale_diagnostics = true, -- Enable ALE diagnostics (Default: false)
 		})
 	end,
+	print(),
 	-- {
 	-- 	"nvim-lualine/lualine.nvim",
 	-- 	dependencies = { "nvim-tree/nvim-web-devicons" },

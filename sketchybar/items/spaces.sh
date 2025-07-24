@@ -1,5 +1,6 @@
 #!/bin/zsh
-SPACE_ICONS=("" "󰊯" "󱋊" "" "" "" "" "" "" "")
+# SPACE_ICONS=("" "󰊯" "󱋊" "" "" "" "" "" "" "")
+SPACE_ICONS=("1" "2" "3" "4" "5" "6" "7" "8" "9" "10")
 for i in "${!SPACE_ICONS[@]}"
 do
   sid="$(($i+1))"
@@ -8,14 +9,15 @@ do
     icon="${SPACE_ICONS[i]}"
     # padding_left=5 
     # padding_right=5
-    icon.padding_left=5
-    icon.padding_right=5
+    icon.padding_left=6
+    icon.padding_right=6
     icon.font="Hack Nerd Font:Bold:16.0"
     background.color=0xff808591
-    background.width=10
-    background.corner_radius=4
+    background.color=0xff9165bd
+    background.width=1
+    background.corner_radius=3.5
     background.border_width=0
-    background.height=23
+    background.height=24
     label.drawing=off
     script="$PLUGIN_DIR/space.sh"
     click_script="yabai -m space --focus $sid"

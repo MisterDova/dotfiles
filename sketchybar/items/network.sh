@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-sketchybar --add item internet left \
+sketchybar --add item internet right \
            --subscribe internet wifi_change \
            --set internet script="$PLUGIN_DIR/internet.sh" \
                           update_freq=1 \

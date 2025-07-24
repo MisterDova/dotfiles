@@ -5,19 +5,19 @@ vim.opt.relativenumber = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 
-vim.opt.expandtab = true
+vim.opt.et = true
 vim.opt.cursorline = true
 -- vim.opt.guicursor = "n-v-c:block"
 
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.sts = 2
 
 -- vim.opt.spell = true
 -- vim.opt.spelllang = "en_us"
 
 vim.opt.termguicolors = true
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 -- vim.opt.cmdheight = 0
 
