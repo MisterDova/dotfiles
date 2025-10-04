@@ -1,9 +1,8 @@
 sudo yabai --load-sa
 
-#yabai -m space --create
-#yabai -m space --create
-#yabai -m space --create
+yabai -m config --space 2 layout stack
 yabai -m config --space 3 layout stack
+yabai -m config --space 4 layout stack
 
 yabai -m space --label 1 terminal
 yabai -m space --label 2 browser
@@ -36,13 +35,15 @@ yabai -m rule --add app="^karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
 yabai -m rule --add app="^Surfshark$" manage=off
-yabai -m rule --add app="^iPhone Mirroring" title="^iPhone Mirroring" manage=off
+yabai -m rule --add app="^iPhone Mirroring" manage=off
 
 yabai -m rule --add app="^Ghostty$" space=1
 yabai -m rule --add app="^Zen$" space=2
 yabai -m rule --add app="^Discord$" space=3
+yabai -m rule --add app="^Microsoft Outlook$" space=3
 yabai -m rule --add app="^WhatsApp$" space=3
 yabai -m rule --add app="^Telegram$" space=3 
+yabai -m rule --add app="^Cursor$" space=4
 
 yabai -m rule --apply
 

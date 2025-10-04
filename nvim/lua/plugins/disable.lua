@@ -1,3 +1,3 @@
 return {
-	{ "nvimdev/lspsaga.nvim", enabled = false },
+	-- { "nvimdev/lspsaga.nvim", enabled = false },
 }

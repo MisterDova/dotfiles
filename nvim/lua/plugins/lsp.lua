@@ -11,7 +11,8 @@ return {
 		opts = {
 			auto_install = true,
 			automatic_enable = true,
-			ensure_installed = { "lua_ls", "marksman", "pylsp" },
+			-- ensure_installed = { "lua_ls", "marksman", "pylsp" },
+			ensure_installed = { "lua_ls", "marksman", "pyright" },
 		},
 	},
 	{

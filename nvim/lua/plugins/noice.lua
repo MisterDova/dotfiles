@@ -5,6 +5,9 @@ return {
 		---@diagnostic disable-next-line: missing-fields
 		require("noice").setup({
 			lsp = {
+				signature = {
+					enabled = false,
+				},
 				progress = {
 					enabled = false,
 				},

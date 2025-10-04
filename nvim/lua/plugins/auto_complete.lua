@@ -11,7 +11,7 @@ return {
 			-- cmdline = { enabled = false },
 
 			keymap = {
-				preset = "default",
+				preset = "none",
 				["<CR>"] = { "accept", "fallback" },
 				["<C-p>"] = { "select_prev", "fallback" },
 				["<C-n>"] = { "select_next", "fallback" },
