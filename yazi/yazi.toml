@@ -4,6 +4,7 @@ edit = [{ run = 'nvim "$@"', block = true }]
 [mgr]
 sort_by = "natural"
 sort_dir_first = true
+linemode = "mtime"
 
 [[plugin.prepend_previewers]]
 name = "*.md"

@@ -22,3 +22,8 @@ hash = "63b6c222bf2103b3023389dde5e2ecfe"
 use = "ashen-org/ashen:ashen"
 rev = "28ec623"
 hash = "f9aed559dc6820dbc7253253be1bb6d2"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine-moon"
+rev = "aa2d937"
+hash = "97cd4819252cb1a9d0f55daa14e481e"
