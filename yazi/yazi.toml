@@ -1,11 +1,10 @@
 [opener]
 edit = [{ run = 'nvim "$@"', block = true }]
 
-[manager]
+[mgr]
 sort_by = "natural"
 sort_dir_first = true
 
-[plugin]
-prepend_previewers = [
-  { name = "*.md", run = "glow" },
-]
+[[plugin.prepend_previewers]]
+name = "*.md"
+run  = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"'
