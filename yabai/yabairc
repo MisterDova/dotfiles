@@ -35,9 +35,10 @@ yabai -m rule --add app="^karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
 yabai -m rule --add app="^Surfshark$" manage=off
-yabai -m rule --add app="^iPhone Mirroring" manage=off
+yabai -m rule --add app="^iPhone Mirroring" manage=off label="no-border"
 
 yabai -m rule --add app="^Ghostty$" space=1
+yabai -m rule --add app="^kitty$" space=1
 yabai -m rule --add app="^Zen$" space=2
 yabai -m rule --add app="^Discord$" space=3
 yabai -m rule --add app="^Microsoft Outlook$" space=3
@@ -48,5 +49,6 @@ yabai -m rule --add app="^Cursor$" space=4
 yabai -m rule --apply
 
 borders active_color=0xffd6b4fc width=5
+borders inactive_color=0x00000000 width=5
 # inactive_color=0xff494d64
 #~/.config/yabai/transparency.sh &
