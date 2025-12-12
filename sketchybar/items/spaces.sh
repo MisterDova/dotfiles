@@ -28,10 +28,10 @@ do
 done
 
 sketchybar --add bracket spaces '/space\..*/' \
-           #--set         spaces background.color=0xdd353535 \
-           --set         spaces background.color=0x00000000 \
+           --set         spaces background.color=0x11353535 \
+           #--set         spaces background.color=0x00000000 \
                                 background.corner_radius=4  \
-                                background.height=25 \
+                                background.height=28 \
                                 background.border_width=2.5 \
                                 #background.border_color=0xffd6b4fc \
                                 corner_radius=10 \

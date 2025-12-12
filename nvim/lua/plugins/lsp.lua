@@ -30,4 +30,16 @@ return {
 			},
 		},
 	},
+	{
+		"jinzhongjia/LspUI.nvim",
+		branch = "main",
+		config = function()
+			require("LspUI").setup({
+				vim.keymap.set("n", "K", "<cmd>LspUI hover<CR>"),
+				vim.keymap.set("n", "<leader>ca", "<cmd>LspUI code_action<CR>"),
+				vim.keymap.set("n", "]e", "<cmd>LspUI diagnostic next<CR>"),
+				vim.keymap.set("n", "[e", "<cmd>LspUI diagnostic prev<CR>"),
+			})
+		end,
+	},
 }
