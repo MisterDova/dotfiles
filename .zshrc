@@ -47,3 +47,6 @@ alias jukit_kitty="kitty --listen-on=unix:@"$(date +%s%N)" -o allow_remote_contr
 
 export EDITOR="nvim"
 export VISUAL="nvim"
+
+PS1='%~: '
+

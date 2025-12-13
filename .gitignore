@@ -4,3 +4,4 @@ btop/*.log
 karabiner/automatic_backups/
 nvim/lazy-lock.json
 .DS_Store
+lazygit/
