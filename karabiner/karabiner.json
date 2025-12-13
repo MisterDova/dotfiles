@@ -44,6 +44,14 @@
                     "ignore": true,
                     "ignore_vendor_events": true,
                     "treat_as_built_in_keyboard": true
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": true,
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 591,
+                        "vendor_id": 1452
+                    }
                 }
             ],
             "name": "Default profile",

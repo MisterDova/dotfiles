@@ -17,10 +17,6 @@ unset __conda_setup
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-#. "/Users/maxchan/.deno/env"
-
 alias ls="eza -l -h --no-permissions --no-filesize --no-user --icons -s=Name"
 alias lg="lazygit"
 alias nv="nvim"
