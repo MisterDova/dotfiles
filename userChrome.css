@@ -1,0 +1,34 @@
+#urlbar-input {
+    font-size: 12px !important;
+    color: white !important;
+    text-align: center !important;
+    margin-bottom: 1px !important;
+}
+
+#urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]) {
+    #urlbar-input {
+        font-size: 16px !important;
+        text-align: left !important;
+    }
+}
+
+/* URLBar Background Blur */
+/* Copied from this post's comment -> https://www.reddit.com/r/zen_browser/comments/1ikqsg0/floating_url_bar_with_blur_effect/ */
+#browser:has(#urlbar[open][zen-floating-urlbar="true"]) .browserContainer {
+    pointer-events: none;
+    filter: blur(10px) brightness(70%) saturate(50%) opacity(70%) !important;
+    scale: 1.1 !important;
+    /* Zoom effect, remove the // to enable */
+}
+
+#urlbar .urlbarView-body-inner {
+  display: none !important;
+}
+
+#urlbar[usertyping] .urlbarView-body-inner {
+  display: block !important;
+}
+
+#browser .browserContainer {
+    transition: all 0.2s ease-in-out !important;
+}
