@@ -1,5 +1,5 @@
 #!/bin/zsh
-SPACE_ICONS=("" "󰊯" "󱋊" "" "" "" "" "" "" "")
+SPACE_ICONS=("" "" "󰊯" "󱋊" "󱆀" "" "" "" "" "" "")
 #SPACE_ICONS=("1" "2" "3" "4" "5" "6" "7" "8" "9" "10")
 for i in "${!SPACE_ICONS[@]}"
 do
@@ -9,8 +9,8 @@ do
     icon="${SPACE_ICONS[i]}"
     # padding_left=5 
     # padding_right=5
-    icon.padding_left=6
-    icon.padding_right=6
+    icon.padding_left=5
+    icon.padding_right=5
     icon.font="Hack Nerd Font:Bold:16.0"
     background.color=0xff808591
     background.color=0xff9165bd

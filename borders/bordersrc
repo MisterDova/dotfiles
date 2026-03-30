@@ -1,0 +1,13 @@
+#!/bin/bash
+
+options=(
+  blacklist="iPhone Mirroring, Stats, DeskIn"
+  width=5.0
+  style=round
+  active_color=0xffd6b4fc
+  inactive_color=0x00000000
+  hidpi=true
+  
+)
+
+borders "${options[@]}"

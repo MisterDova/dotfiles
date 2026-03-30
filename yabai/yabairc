@@ -6,16 +6,12 @@ sudo yabai --load-sa
 yabai -m config --space 2 layout stack
 yabai -m config --space 3 layout stack
 yabai -m config --space 4 layout stack
-
-yabai -m space --label 1 terminal
-yabai -m space --label 2 browser
-yabai -m space --label 3 chat
+yabai -m config --space 5 layout stack
 
 yabai -m config layout bsp
 yabai -m config window_placement second_child
 
-
-yabai -m config top_padding    10
+yabai -m config top_padding    0
 yabai -m config bottom_padding 10
 yabai -m config left_padding   10
 yabai -m config right_padding  10
@@ -32,26 +28,33 @@ yabai -m mouse_drop_action swap
 yabai -m config window_shadow float
 
 yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^DeskIn$" manage=off
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculators$" manage=off
 yabai -m rule --add app="^karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
 yabai -m rule --add app="^Surfshark$" manage=off
-yabai -m rule --add app="^iPhone Mirroring" manage=off label="no-border"
+yabai -m rule --add app="^iPhone Mirroring" manage=off
 
-yabai -m rule --add app="^Ghostty$" space=1
-yabai -m rule --add app="^kitty$" space=1
-yabai -m rule --add app="^Zen$" space=2
-yabai -m rule --add app="^Discord$" space=3
-yabai -m rule --add app="^Microsoft Outlook$" space=3
-yabai -m rule --add app="^WhatsApp$" space=3
-yabai -m rule --add app="^Telegram$" space=3 
-yabai -m rule --add app="^Cursor$" space=4
+yabai -m rule --add app="^.*$" space=1
+yabai -m rule --add app="^Ghostty$" space=2
+yabai -m rule --add app="^kitty$" space=2
+yabai -m rule --add app="^Zen$" space=3
+yabai -m rule --add app="^Vivaldi$" space=3
+yabai -m rule --add app="^Discord$" space=4
+yabai -m rule --add app="^Microsoft Outlook$" space=4
+yabai -m rule --add app="^WhatsApp$" space=4
+yabai -m rule --add app="^Telegram$" space=4
+yabai -m rule --add app="^Microsoft Word$" space=5
+yabai -m rule --add app="^Microsoft Excel$" space=5
+yabai -m rule --add app="^Microsoft PowerPoint$" space=5
+yabai -m rule --add app="^Preview$" space=5
 
+yabai -m signal --add event=window_created app="^WhatsApp$" action="yabai -m window --space 4"
 yabai -m rule --apply
 
-borders active_color=0xffd6b4fc width=5
-borders inactive_color=0x00000000 width=5
+#borders active_color=0xffd6b4fc width=5
+#borders inactive_color=0x00000000 width=5
 # inactive_color=0xff494d64
 #~/.config/yabai/transparency.sh &
